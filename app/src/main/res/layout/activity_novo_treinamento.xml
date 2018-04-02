@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.miguel.jonatas.tovcam.NovoTreinamentoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Novo Treinamento" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="60dp"
+            android:text="Nome do Treinamento:                                                              " />
+
+        <EditText
+            android:id="@+id/editTextNovoTreinamentoNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView12"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignRight="@+id/textView12"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextNovoTreinamentoNome"
+            android:layout_alignStart="@+id/editTextNovoTreinamentoNome"
+            android:layout_below="@+id/editTextNovoTreinamentoNome"
+            android:layout_marginTop="22dp"
+            android:text="Empresa: " />
+
+        <Button
+            android:id="@+id/btnNovoTreinamentoSelecionarEmpresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecionar Empresa"
+            android:layout_below="@+id/textView13"
+            android:layout_alignRight="@+id/editTextNovoTreinamentoNome"
+            android:layout_alignEnd="@+id/editTextNovoTreinamentoNome" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_below="@+id/btnNovoTreinamentoSelecionarEmpresa"
+            android:layout_marginTop="24dp"
+            android:text="Descrição do Treinamento:" />
+
+        <EditText
+            android:id="@+id/editTextNovoTreinamentoDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnNovoTreinamentoSelecionarEmpresa"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignRight="@+id/btnNovoTreinamentoSelecionarEmpresa"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_below="@+id/textView14"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextNovoTreinamentoDescricao"
+            android:layout_alignStart="@+id/editTextNovoTreinamentoDescricao"
+            android:layout_below="@+id/editTextNovoTreinamentoDescricao"
+            android:layout_marginTop="27dp"
+            android:text="Selecionar Questões:" />
+
+        <Button
+            android:id="@+id/btnNovoTreinamentoSelecionarQuestoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecionar Questões"
+            android:layout_alignTop="@+id/textView15"
+            android:layout_alignRight="@+id/editTextNovoTreinamentoDescricao"
+            android:layout_alignEnd="@+id/editTextNovoTreinamentoDescricao" />
+
+        <Button
+            android:id="@+id/btnNovoTreinamentoCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="Cadastrar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15" />
+
+        <Button
+            android:id="@+id/btnNovoTreinamentoCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_alignBaseline="@+id/btnNovoTreinamentoCadastrar"
+            android:layout_alignBottom="@+id/btnNovoTreinamentoCadastrar"
+            android:layout_alignRight="@+id/editTextNovoTreinamentoDescricao"
+            android:layout_alignEnd="@+id/editTextNovoTreinamentoDescricao" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1038134674004",
+    "firebase_url": "https://tovcam-cef04.firebaseio.com",
+    "project_id": "tovcam-cef04",
+    "storage_bucket": "tovcam-cef04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038134674004:android:51703ea49d4b6c56",
+        "android_client_info": {
+          "package_name": "com.miguel.jonatas.tovcam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038134674004-feausrnrdurarprhatie05772ck9fatq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlJ9IgspG3LErhr-vxsm1lj1Nqyl6g2wI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

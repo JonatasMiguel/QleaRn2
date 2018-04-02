@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.miguel.jonatas.tovcam.CriarQuestaoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="89dp"
+            android:text="Codigo da Questão:" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="40dp"
+            android:text="Titulo:" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="42dp"
+            android:text="Pontos:   " />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="49dp"
+            android:text="Texto: " />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonNovaQuestaoCadastrar"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_marginBottom="66dp"
+            android:text="Resposta: " />
+
+        <Button
+            android:id="@+id/buttonNovaQuestaoCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView10"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView10"
+            android:text="Cadastrar" />
+
+        <Button
+            android:id="@+id/buttonNovaQuestaoCancela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:text="Cancelar" />
+
+        <EditText
+            android:id="@+id/editTextNovaQuestaoCod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignEnd="@+id/buttonNovaQuestaoCancela"
+            android:layout_alignRight="@+id/buttonNovaQuestaoCancela"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextNovaQuestaoTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignEnd="@+id/editTextNovaQuestaoCod"
+            android:layout_alignRight="@+id/editTextNovaQuestaoCod"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextNovaQuestaoPontos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_alignEnd="@+id/editTextNovaQuestaoTitulo"
+            android:layout_alignRight="@+id/editTextNovaQuestaoTitulo"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNovaQuestaoTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView10"
+            android:layout_alignEnd="@+id/editTextNovaQuestaoPontos"
+            android:layout_alignRight="@+id/editTextNovaQuestaoPontos"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_toRightOf="@+id/textView8"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonNovaQuestaoCadastrar"
+            android:layout_toRightOf="@+id/textView10"
+            android:layout_alignRight="@+id/buttonNovaQuestaoCancela"
+            android:layout_alignEnd="@+id/buttonNovaQuestaoCancela">
+
+            <RadioButton
+                android:id="@+id/radioButtonNovaQuestaoFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/buttonNovaQuestaoCancela"
+                android:layout_alignRight="@+id/buttonNovaQuestaoCancela"
+                android:layout_alignTop="@+id/radioButtonNovaQuestaoTrue"
+                android:checked="false"
+                android:text="Falso" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNovaQuestaoTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/buttonNovaQuestaoCadastrar"
+                android:layout_alignLeft="@+id/editTextNovaQuestaoTexto"
+                android:layout_alignStart="@+id/editTextNovaQuestaoTexto"
+                android:layout_marginBottom="15dp"
+                android:checked="true"
+                android:text="Verdadeiro" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

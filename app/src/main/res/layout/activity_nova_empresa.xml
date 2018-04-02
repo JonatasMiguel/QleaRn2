@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.miguel.jonatas.tovcam.NovaEmpresa">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Nome da Empresa:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="69dp"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Nome"
+            android:ems="10"
+            android:layout_marginTop="22dp"
+            android:id="@+id/editTextNomeNovaEmpresa"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
+
+        <TextView
+            android:text="CNPJ:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextNomeNovaEmpresa"
+            android:layout_alignLeft="@+id/editTextNomeNovaEmpresa"
+            android:layout_alignStart="@+id/editTextNomeNovaEmpresa"
+            android:layout_marginTop="28dp"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_below="@+id/textView4"
+            android:layout_alignRight="@+id/editTextNomeNovaEmpresa"
+            android:layout_alignEnd="@+id/editTextNomeNovaEmpresa"
+            android:layout_marginTop="32dp"
+            android:id="@+id/editTextCnpjNovaEmpresa" />
+
+        <TextView
+            android:text="Endereço"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextCnpjNovaEmpresa"
+            android:layout_alignLeft="@+id/editTextCnpjNovaEmpresa"
+            android:layout_alignStart="@+id/editTextCnpjNovaEmpresa"
+            android:layout_marginTop="32dp"
+            android:id="@+id/textView5" />
+
+        <Button
+            android:text="Cadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/editTextEnderecoNovaEmpresa"
+            android:layout_alignStart="@+id/editTextEnderecoNovaEmpresa"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btnCadastrarNovaEmpresa" />
+
+        <Button
+            android:text="Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnCadastrarNovaEmpresa"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:id="@+id/btnCancelarNovaEmpresa" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Rua,n°,Bairro,Cidade,Estado"
+            android:ems="10"
+            android:layout_marginTop="32dp"
+            android:id="@+id/editTextEnderecoNovaEmpresa"
+            android:layout_below="@+id/textView5"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

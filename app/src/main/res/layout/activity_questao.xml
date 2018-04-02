@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.miguel.jonatas.tovcam.QuestaoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Pergunta" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonQuestaoNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:text="NÃO" />
+
+        <Button
+            android:id="@+id/buttonQuestaoYES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buttonQuestaoCancela"
+            android:layout_alignBottom="@+id/buttonQuestaoCancela"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:text="SIM" />
+
+        <Button
+            android:id="@+id/buttonQuestaoCancela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_alignBaseline="@+id/buttonQuestaoNO"
+            android:layout_alignBottom="@+id/buttonQuestaoNO"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textViewQuestaoTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonQuestaoNO"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/buttonQuestaoNO"
+            android:layout_marginTop="77dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textViewQuestaoTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewQuestaoTitulo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:verticalScrollbarPosition="right" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
